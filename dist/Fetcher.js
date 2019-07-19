@@ -5,7 +5,7 @@ var p = require("path");
 var Fetcher = /** @class */ (function () {
     function Fetcher() {
     }
-    Fetcher.prototype.fetch = function (path) {
+    Fetcher.fetch = function (path) {
         if (!fs.existsSync(path)) {
             throw new Error("Invalid path!");
         }

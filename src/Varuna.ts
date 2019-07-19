@@ -2,7 +2,6 @@ import { Fetcher } from "./Fetcher";
 
 export class Varuna {
     private checklist: Object;
-    private fetcher: Fetcher;
     private files: Object;
 
     constructor(path: string) {
@@ -12,8 +11,7 @@ export class Varuna {
 
         this.checklist = {};
 
-        this.fetcher = new Fetcher();
-        this.files = this.fetcher.fetch(path);
+        this.files = Fetcher.fetch(path);
     }
 
     public addCheck(checkname: string, check: Function) {

@@ -7,8 +7,7 @@ var Varuna = /** @class */ (function () {
             throw new Error("Varuna needs a path!");
         }
         this.checklist = {};
-        this.fetcher = new Fetcher_1.Fetcher();
-        this.files = this.fetcher.fetch(path);
+        this.files = Fetcher_1.Fetcher.fetch(path);
     }
     Varuna.prototype.addCheck = function (checkname, check) {
         this.checklist[checkname] = check;

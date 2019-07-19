@@ -2,7 +2,7 @@ const fs = require("fs");
 const p = require("path");
 
 export class Fetcher {
-    public fetch(path: string) {
+    public static fetch(path: string) {
         if (!fs.existsSync(path)) {
             throw new Error("Invalid path!");
         }
