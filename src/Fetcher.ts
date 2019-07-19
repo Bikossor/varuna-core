@@ -1,5 +1,5 @@
-const fs = require("fs");
-const p = require("path");
+import fs = require("fs");
+import p = require("path");
 
 export class Fetcher {
     public static fetch(path: string) {
