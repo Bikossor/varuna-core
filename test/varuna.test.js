@@ -1,4 +1,4 @@
-const Varuna = require("../dist/Varuna");
+const Varuna = require("../dist/Varuna").Varuna;
 const v = new Varuna("../");
 
 v.addCheck("Test1", (e) => {
