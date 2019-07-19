@@ -1,6 +1,6 @@
 import { Fetcher } from "./Fetcher";
 
-class Varuna {
+export class Varuna {
     private checklist: Object;
     private fetcher: Fetcher;
     private files: Object;
@@ -30,5 +30,3 @@ class Varuna {
         return this.checklist;
     }
 }
-
-export = Varuna;

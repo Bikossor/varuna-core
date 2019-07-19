@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Fetcher_1 = require("./Fetcher");
 var Varuna = /** @class */ (function () {
     function Varuna(path) {
@@ -22,4 +23,4 @@ var Varuna = /** @class */ (function () {
     };
     return Varuna;
 }());
-module.exports = Varuna;
+exports.Varuna = Varuna;

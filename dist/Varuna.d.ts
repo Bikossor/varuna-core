@@ -1,4 +1,4 @@
-declare class Varuna {
+export declare class Varuna {
     private checklist;
     private fetcher;
     private files;
@@ -7,4 +7,3 @@ declare class Varuna {
     run(): void;
     getResult(): Object;
 }
-export = Varuna;
