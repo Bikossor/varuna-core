@@ -11,7 +11,12 @@ export class Fetcher {
         var res = {};
 
         directories.forEach(dir => {
-            res[dir] = fs.readdirSync(p.join(path, dir));
+
+            const completePath = p.join(path, dir);
+
+            if (fs.lstatSync(completePath).isDirectory()) {
+                res[dir] = fs.readdirSync(completePath);
+            }
         });
 
         return res;
