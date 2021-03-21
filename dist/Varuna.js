@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Varuna = void 0;
 var Fetcher_1 = require("./Fetcher");
 var Varuna = /** @class */ (function () {
     function Varuna(path) {
