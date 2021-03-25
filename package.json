@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "./dist/Varuna.js",
+  "bin": {
+    "varuna": "./bin/cli.js"
+  },
   "scripts": {
     "test": "node ./test/varuna.test.js",
     "build": "tsc"
