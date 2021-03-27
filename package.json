@@ -2,13 +2,17 @@
   "name": "@varuna/core",
   "version": "0.1.0",
   "description": "",
-  "main": "./dist/Varuna.js",
+  "main": "./lib/Varuna.js",
   "bin": {
     "varuna": "./bin/cli.js"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "test": "node ./test/varuna.test.js",
-    "build": "tsc"
+    "build": "gulp",
+    "prepare": "gulp"
   },
   "repository": {
     "type": "git",
@@ -26,5 +30,11 @@
   "homepage": "https://github.com/Bikossor/varuna-core#readme",
   "dependencies": {
     "@types/node": "^12.0.12"
+  },
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^4.2.3"
   }
 }
