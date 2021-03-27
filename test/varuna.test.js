@@ -1,4 +1,4 @@
-const Varuna = require("../dist/Varuna").Varuna;
+const Varuna = require("../lib/Varuna").Varuna;
 const v = new Varuna("../");
 
 v.addCheck(`Check if file "package.json" is present`, (e) => {
