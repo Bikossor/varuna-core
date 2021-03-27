@@ -1,24 +1,24 @@
 const Varuna = require("../lib/Varuna").Varuna;
 const v = new Varuna("../");
 
-v.addCheck(`Check if file "package.json" is present`, (e) => {
-    var res = {};
+v.addCheck(`Check if file "package.json" is present`, e => {
+  var res = {};
 
-    for (var element in e) {
-        res[element] = e[element].includes("package.json");
-    }
+  for (var element in e) {
+    res[element] = e[element].includes("package.json");
+  }
 
-    return res;
+  return res;
 });
 
-v.addCheck(`Check if directory ".expo" is present`, (e) => {
-    var res = {};
+v.addCheck(`Check if directory ".expo" is present`, e => {
+  var res = {};
 
-    for (var element in e) {
-        res[element] = e[element].includes(".expo");
-    }
+  for (var element in e) {
+    res[element] = e[element].includes(".expo");
+  }
 
-    return res;
+  return res;
 });
 
 v.run();
