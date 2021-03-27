@@ -12,7 +12,9 @@
   "scripts": {
     "test": "node ./test/varuna.test.js",
     "build": "gulp",
-    "prepare": "gulp"
+    "prepare": "gulp",
+    "prettier:check": "prettier -c .",
+    "prettier:write": "prettier -w ."
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,7 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
+    "prettier": "2.2.1",
     "typescript": "^4.2.3"
   }
 }
